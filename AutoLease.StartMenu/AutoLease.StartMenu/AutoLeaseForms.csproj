@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D0A43E02-8F20-4F70-BEA8-704B9FEC4B60}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AutoLease.StartMenu</RootNamespace>
+    <AssemblyName>AutoLease.StartMenu</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoLeaseClassLib">
+      <HintPath>..\AutoLeaseClassLib\bin\Debug\AutoLeaseClassLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AutoCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoCard.Designer.cs">
+      <DependentUpon>AutoCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoCategoryRegistr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoCategoryRegistr.Designer.cs">
+      <DependentUpon>AutoCategoryRegistr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoList.Designer.cs">
+      <DependentUpon>AutoList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoRegistr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoRegistr.Designer.cs">
+      <DependentUpon>AutoRegistr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckAutoModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckAutoModel.Designer.cs">
+      <DependentUpon>CheckAutoModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckCategory.Designer.cs">
+      <DependentUpon>CheckCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckClient.Designer.cs">
+      <DependentUpon>CheckClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientList.Designer.cs">
+      <DependentUpon>ClientList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientCardInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientCardInfo.Designer.cs">
+      <DependentUpon>ClientCardInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientRegistr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientRegistr.Designer.cs">
+      <DependentUpon>ClientRegistr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CopyList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CopyList.Designer.cs">
+      <DependentUpon>CopyList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CountryToAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CountryToAdd.Designer.cs">
+      <DependentUpon>CountryToAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewAutoOfModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAutoOfModel.Designer.cs">
+      <DependentUpon>NewAutoOfModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartMenu.Designer.cs">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AutoLease.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoLease.Designer.cs">
+      <DependentUpon>AutoLease.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModelProductToAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelProductToAdd.Designer.cs">
+      <DependentUpon>ModelProductToAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AutoReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoReturn.Designer.cs">
+      <DependentUpon>AutoReturn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AutoCard.resx">
+      <DependentUpon>AutoCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoCategoryRegistr.resx">
+      <DependentUpon>AutoCategoryRegistr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoList.resx">
+      <DependentUpon>AutoList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoRegistr.resx">
+      <DependentUpon>AutoRegistr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckAutoModel.resx">
+      <DependentUpon>CheckAutoModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckCategory.resx">
+      <DependentUpon>CheckCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckClient.resx">
+      <DependentUpon>CheckClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientList.resx">
+      <DependentUpon>ClientList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientCardInfo.resx">
+      <DependentUpon>ClientCardInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientRegistr.resx">
+      <DependentUpon>ClientRegistr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientRegistr.ru.resx">
+      <DependentUpon>ClientRegistr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CopyList.resx">
+      <DependentUpon>CopyList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CountryToAdd.resx">
+      <DependentUpon>CountryToAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAutoOfModel.resx">
+      <DependentUpon>NewAutoOfModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartMenu.resx">
+      <DependentUpon>StartMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AutoLease.resx">
+      <DependentUpon>AutoLease.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelProductToAdd.resx">
+      <DependentUpon>ModelProductToAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="AutoReturn.resx">
+      <DependentUpon>AutoReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\фон1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
