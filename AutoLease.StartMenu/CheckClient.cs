@@ -14,7 +14,7 @@ using AutoLeaseStorage;
 namespace AutoLease.StartMenu
 {
     public partial class CheckClient : Form
-    { 
+    {
 
         public CheckClient()
         {
@@ -35,12 +35,12 @@ namespace AutoLease.StartMenu
                 searchedClient = ClientListService.ClientSearchCheck(PassportMaskedTextBox.Text);
                 if (searchedClient == null)
                 {
-                    clientregistr.setNameTextBoxes(NameTextBox.Text, SurnameTextBox.Text,FathernameTextBox.Text, PassportMaskedTextBox.Text);
+                    clientregistr.setNameTextBoxes(NameTextBox.Text, SurnameTextBox.Text, FathernameTextBox.Text, PassportMaskedTextBox.Text);
                     clientregistr.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Такой клиент уже зарегестрирован." , "",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                    MessageBox.Show("Такой клиент уже зарегестрирован.", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     this.Close();
                 }
                 this.Hide();
@@ -54,7 +54,7 @@ namespace AutoLease.StartMenu
                 if (SurnameTextBox.TextLength == 0)
                     SurnameTextBox.BackColor = Color.IndianRed;
                 if (FathernameTextBox.TextLength == 0)
-                    FathernameTextBox.BackColor = Color.IndianRed;                
+                    FathernameTextBox.BackColor = Color.IndianRed;
             }
         }
 
@@ -135,5 +135,6 @@ namespace AutoLease.StartMenu
         {
             FathernameErrorProvider.Clear();
         }
+
     }
 }
