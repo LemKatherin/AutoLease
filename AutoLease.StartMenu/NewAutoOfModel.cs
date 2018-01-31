@@ -53,7 +53,7 @@ namespace AutoLease.StartMenu
                     else if (AutTrRadioButton.Checked)
                         transmission = "автоматическая";
                     else transmission = "роботизированная";
-                    if (FlagFrom)
+                    if (FlagFrom && Model.Automobiles.Count == Model.CarsAmount)
                         Model.CarsAmount++;
 
                     Auto autoautomobile = new Auto(Convert.ToInt32(ProductYearMaskedTextBox.Text.Remove(4, 3)), ColorTextBox.Text, MileAgeTextBox.Text,
