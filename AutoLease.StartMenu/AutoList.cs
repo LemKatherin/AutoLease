@@ -225,6 +225,7 @@ namespace AutoLease.StartMenu
 
                     RadioButton AutTrRadioButtonNew = new RadioButton();
                     AutTrRadioButtonNew.AutoSize = AutTrRadioButton.AutoSize;
+                    AutTrRadioButtonNew.Size = AutTrRadioButton.Size;
                     AutTrRadioButtonNew.Text = AutTrRadioButton.Text;
                     AutTrRadioButtonNew.Anchor = AutTrRadioButton.Anchor;
                     AutTrRadioButtonNew.Enabled = AutTrRadioButton.Enabled;
@@ -233,7 +234,8 @@ namespace AutoLease.StartMenu
                     AutTrRadioButtonNew.Dock = AutTrRadioButton.Dock;
 
                     RadioButton RobTrRadioButtonNew = new RadioButton();
-                    RobTrRadioButtonNew.AutoSize = AutTrRadioButton.AutoSize;
+                    RobTrRadioButtonNew.AutoSize = RobTrRadioButton.AutoSize;
+                    RobTrRadioButtonNew.Size = RobTrRadioButton.Size;
                     RobTrRadioButtonNew.Text = RobTrRadioButton.Text;
                     RobTrRadioButtonNew.Anchor = RobTrRadioButton.Anchor;
                     RobTrRadioButtonNew.Enabled = RobTrRadioButton.Enabled;
@@ -242,7 +244,8 @@ namespace AutoLease.StartMenu
                     RobTrRadioButtonNew.Dock = RobTrRadioButton.Dock;
 
                     RadioButton VarTrRadioButtonNew = new RadioButton();
-                    VarTrRadioButtonNew.AutoSize = AutTrRadioButton.AutoSize;
+                    VarTrRadioButtonNew.AutoSize = VarTrRadioButton.AutoSize;
+                    VarTrRadioButtonNew.Size = VarTrRadioButton.Size;
                     VarTrRadioButtonNew.Text = VarTrRadioButton.Text;
                     VarTrRadioButtonNew.Anchor = VarTrRadioButton.Anchor;
                     VarTrRadioButtonNew.Enabled = VarTrRadioButton.Enabled;
@@ -251,7 +254,8 @@ namespace AutoLease.StartMenu
                     VarTrRadioButtonNew.Dock = VarTrRadioButton.Dock;
 
                     RadioButton MechTrRadioButtonNew = new RadioButton();
-                    MechTrRadioButtonNew.AutoSize = AutTrRadioButton.AutoSize;
+                    MechTrRadioButtonNew.AutoSize = MechTrRadioButton.AutoSize;
+                    MechTrRadioButtonNew.Size = MechTrRadioButton.Size;
                     MechTrRadioButtonNew.Text = MechTrRadioButton.Text;
                     MechTrRadioButtonNew.Anchor = MechTrRadioButton.Anchor;
                     MechTrRadioButtonNew.Enabled = MechTrRadioButton.Enabled;
@@ -305,7 +309,7 @@ namespace AutoLease.StartMenu
                     automobileInfoTableNew.Controls.Add(TransmissionTableNew, 1, 3);
                     automobileInfoTableNew.Controls.Add(DescriptionTextBoxNew, 1, 4);
                     automobileInfoTableNew.SetColumnSpan(DescriptionTextBoxNew, 3);
-                    automobileInfoTableNew.SetColumnSpan(TransmissionTableLayoutPanel, 3);
+                    automobileInfoTableNew.SetColumnSpan(TransmissionTableNew, 3);
 
                     PhotoBoxNew.Image = i.Photo;
                     YearTextBoxNew.Text = i.Year.ToString();

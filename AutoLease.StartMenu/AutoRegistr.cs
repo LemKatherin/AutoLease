@@ -92,6 +92,7 @@ namespace AutoLease.StartMenu
                             newauto.FlagFrom = false;
                             newauto.ShowDialog();
                         }
+
                     }
                 }
                 else
@@ -190,7 +191,7 @@ namespace AutoLease.StartMenu
 
         private void CountryComboBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //e.Handled = true;
+            e.Handled = true;
 
         }
 
@@ -199,14 +200,7 @@ namespace AutoLease.StartMenu
             if (CountryComboBox.BackColor == Color.IndianRed)
                 CountryComboBox.BackColor = Color.White;
 
-            //var findCountries = from country in startMenu.carList.countryList
-            //                    where country.StartsWith(CountryComboBox.Text)
-            //                    select country;
-            //if (findCountries != null)
-            //{
-            //    CountryComboBox.Items.AddRange(findCountries.ToArray<String>());
-            //    CountryComboBox.DroppedDown = true;
-            //}
+          
         }
 
         private void CategoryComboBox_TextChanged(object sender, EventArgs e)
@@ -223,8 +217,7 @@ namespace AutoLease.StartMenu
 
         private void FuelTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //if (!char.IsControl(e.KeyChar) && !char.IsLetter(e.KeyChar))
-            //    e.Handled = true;
+
         }
     }
 

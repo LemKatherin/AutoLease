@@ -63,7 +63,7 @@ namespace AutoLease.StartMenu
                         ModelTextBox.Text = i.ThisAutoModel.Mark + " " + i.ThisAutoModel.Model;
                         CountryTextBox.Text = i.ThisAutoModel.Country;
                         CategoryTextBox.Text = i.ThisAutoModel.Category.Name;
-                        CountAutoTextBox.Text = i.Automobiles.Count.ToString();
+                        CountAutoTextBox.Text = i.CarsAmount.ToString();
                         SumLeaseTextBox.Text = i.ThisAutoModel.SumLease.ToString();
                         AutoPhotoBox.Image = i.ThisAutoModel.AutoPhoto;
                         OpenAllButton.Name = i.ThisAutoModel.Mark + " " + i.ThisAutoModel.Model;
